@@ -21,7 +21,7 @@ function encriptar () {
        tituloMensaje.textContent = "Ningun mensaje fue encontrado";
        parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
 
-       alert("Debes ingresar algún texto")
+       swal("Ooops!", "Debes ingresar un texto", "warning");
     }
 }
 
@@ -46,6 +46,6 @@ function desencriptar() {
     } else {
       muneco.src = "./img/Muneco.png";
       tituloMensaje.textContent = "Ningún mensaje fue encontrado";            parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
-      alert("Ooops! Debes ingresar un texto");
+      swal("Ooops!", "Debes ingresar un texto", "warning");
     }
 }
